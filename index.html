@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستشفى السبع التخصصي - الرعاية الطبية الفائقة</title>
+    <!-- Tailwind CSS للواجهة المودرن -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        body { font-family: 'Cairo', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <i class="fa-solid fa-hospital text-blue-600 text-3xl"></i>
+                <span class="text-2xl font-bold text-slate-900">مستشفى السبع التخصصي</span>
+            </div>
+            <div class="hidden md:flex space-x-8 space-x-reverse font-semibold text-slate-600">
+                <a href="#home" class="hover:text-blue-600">الرئيسية</a>
+                <a href="#services" class="hover:text-blue-600">الخدمات والأقسام</a>
+                <a href="#doctors" class="hover:text-blue-600">الأطباء</a>
+                <a href="#booking" class="hover:text-blue-600">حجز موعد</a>
+            </div>
+            <a href="#booking" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">احجز الآن</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 space-y-6">
+                <span class="bg-blue-500/30 text-blue-200 px-4 py-1.5 rounded-full text-sm font-semibold">رعاية صحية على مدار 24 ساعة</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">رعاية طبية متكاملة وأحدث التقنيات لعائلتك</h1>
+                <p class="text-blue-100 text-lg">نقدم أحدث الخدمات الطبية على يد نخبة من كبار الأطباء والاستشاريين مع أحدث تجهيزات العناية والعمليات.</p>
+                <div class="flex gap-4">
+                    <a href="#booking" class="bg-white text-blue-900 font-bold px-6 py-3 rounded-lg hover:bg-slate-100 transition duration-300 shadow-lg">حجز موعد جديد</a>
+                    <a href="tel:12345" class="border border-white/40 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition duration-300">الطوارئ: 12345</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-center">
+                    <i class="fa-solid fa-heart-pulse text-6xl text-red-400 mb-4 animate-pulse"></i>
+                    <h3 class="text-2xl font-bold">قسم العناية المركزة والطوارئ</h3>
+                    <p class="text-slate-200 mt-2">جاهزية كاملة على مدار الساعة واستجابة سريعة للحالات الحرجة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-slate-900">الأقسام والخدمات الطبية</h2>
+            <p class="text-slate-600 mt-2">تخصصات شاملة مجهزة بأحدث الأجهزة الطبية</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition duration-300">
+                <i class="fa-solid fa-user-doctor text-4xl text-blue-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">العيادات الخارجية</h3>
+                <p class="text-slate-600">تغطية لكافة التخصصات الطبية من الباطنة، العظام، الجراحة، والقلب.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition duration-300">
+                <i class="fa-solid fa-bed-pulse text-4xl text-blue-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">العناية المركزة (ICU)</h3>
+                <p class="text-slate-600">أحدث أجهزة التنفس الصناعي والمراقبة الدقيقة على مدار الساعة.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition duration-300">
+                <i class="fa-solid fa-vial-virus text-4xl text-blue-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">المعمل والأشعة</h3>
+                <p class="text-slate-600">نتائج تحاليل دقيقة وأشعة تشخيصية فورية لضمان التشخيص الصحيح.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-16 bg-slate-100">
+        <div class="max-w-3xl mx-auto px-6 bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-slate-900">حجز موعد للكشف</h2>
+                <p class="text-slate-600 mt-2">قم بملء البيانات وسنقوم بتأكيد الموعد معك فوراً</p>
+            </div>
+            
+            <form id="bookingForm" onsubmit="handleBooking(event)" class="space-y-4">
+                <div>
+                    <label class="block font-semibold mb-1">اسم المريض بالكامل</label>
+                    <input type="text" id="patient_name" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="مثال: أحمد محمد">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-1">رقم الهاتف</label>
+                    <input type="tel" id="patient_phone" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="01012345678">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold mb-1">التخصص المطلوب</label>
+                        <select id="specialty" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option value="">اختر التخصص</option>
+                            <option value="القلب والأوعية الدموية">القلب والأوعية الدموية</option>
+                            <option value="الباطنة">الباطنة العامة</option>
+                            <option value="العظام">جراحة العظام</option>
+                            <option value="الأطفال">الأطفال والحديثي الولادة</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-semibold mb-1">تاريخ الحجز</label>
+                        <input type="date" id="appointment_date" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3.5 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">تأكيد طلب الحجز</button>
+            </form>
+
+            <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center font-bold">
+                تم استلام طلب الحجز بنجاح! وسيتواصل معك فريق الاستقبال قريباً.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center border-t border-slate-800">
+        <p>© 2026 مستشفى السبع التخصصي - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function handleBooking(event) {
+            event.preventDefault();
+            document.getElementById('bookingForm').classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+        }
+    </script>
+</body>
+  </html>
+  
